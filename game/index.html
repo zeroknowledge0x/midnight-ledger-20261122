@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Midnight Ledger - Vault Heist</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #0a0f1c; }
+  #game { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; image-rendering: auto; }
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="The Midnight Ledger: a vault heist. Move with WASD, sneak with Shift, grab the diamond with Space, throw a pebble with E, use smoke with Q."></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
